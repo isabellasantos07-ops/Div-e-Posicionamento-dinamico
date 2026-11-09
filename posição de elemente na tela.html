@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário Moderno</title>
+    <style type="text/css">
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #111119);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .logo-container {
+            margin-bottom: 30px;
+            filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.6));
+            transition: transform 0.3s ease;
+        }
+        .logo-container:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        td {
+            padding: 20px 35px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            background: linear-gradient(145deg, #2a2a40, #222235);
+            border-radius: 10px;
+            color: #e0e0fc;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        td:hover {
+            background: linear-gradient(145deg, #00ffcc, #00b3ff);
+            color: #111119;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 204, 0.3);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="imagens/sunlogo64x30.gif" alt="Sun Logo" onerror="this.style.display='none'; alert('Substitua a imagem se necessário!')"/>
+    </div>
+    <table>
+        <tr>
+            <td>Janeiro</td>
+            <td>Fevereiro</td>
+            <td>Março</td>
+        </tr>
+        <tr>
+            <td>Abril</td>
+            <td>Maio</td>
+            <td>Junho</td>
+        </tr>
+        <tr>
+            <td>Julho</td>
+            <td>Agosto</td>
+            <td>Setembro</td>
+        </tr>
+    </table>
+
+</body>
+</html>
