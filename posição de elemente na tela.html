@@ -2,29 +2,25 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendário Moderno</title>
+    <title>Listas</title>
     <style type="text/css">
         body {
-            background: linear-gradient(135deg, #1e1e2f, #111119);
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: #ffffff;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            background-color: beige;
+            font-family: verdana;
+            color: black;
+            font-size: 80%;
         }
-        .logo-container {
-            margin-bottom: 30px;
-            filter: drop-shadow(0 0 8px rgba(255, 204, 0, 0.6));
-            transition: transform 0.3s ease;
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 50px;
         }
-        .logo-container:hover {
-            transform: scale(1.1) rotate(5deg);
+        .tabela {
+            position: absolute;
+            top: 40px;
+            left: 190px;
         }
-        table {
+                table {
             border-collapse: separate;
             border-spacing: 12px;
             background: rgba(255, 255, 255, 0.05);
@@ -35,7 +31,7 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
         }
         td {
-            padding: 20px 35px;
+            padding: 5px 5px;
             text-align: center;
             font-weight: 600;
             font-size: 1.1rem;
@@ -56,26 +52,30 @@
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="imagens/sunlogo64x30.gif" alt="Sun Logo" onerror="this.style.display='none'; alert('Substitua a imagem se necessário!')"/>
+
+    <div class="logo">
+        <img src="https://i.pinimg.com/474x/32/55/7f/32557fce6966a32c43b2d0405b80d8d6.jpg" alt="Sun Logo" width="100">
     </div>
-    <table>
-        <tr>
-            <td>Janeiro</td>
-            <td>Fevereiro</td>
-            <td>Março</td>
-        </tr>
-        <tr>
-            <td>Abril</td>
-            <td>Maio</td>
-            <td>Junho</td>
-        </tr>
-        <tr>
-            <td>Julho</td>
-            <td>Agosto</td>
-            <td>Setembro</td>
-        </tr>
-    </table>
+
+    <div class="tabela">
+        <table border="1" cellpadding="4" cellspacing="0" bordercolor="blue">
+            <tr>
+                <td>Janeiro</td>
+                <td>Fevereiro</td>
+                <td>Março</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>Maio</td>
+                <td>Junho</td>
+            </tr>
+            <tr>
+                <td>Julho</td>
+                <td>Agosto</td>
+                <td>Setembro</td>
+            </tr>
+        </table>
+    </div>
 
 </body>
 </html>
